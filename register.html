@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng ký - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Học viện Hàng không Việt Nam</small></span></a>
+<div class="userbox"><a href="login.html">Đăng nhập</a><a href="register.html">Đăng ký</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="index.html">Trang chủ</a><a href="catalog.html">Tra cứu sách</a><a href="ebooks.html">Thư viện số (Ebook)</a><a href="announcements.html">Thông báo</a></div></div>
+<div class="wrap">
+<div class="panel panel-center" style="max-width:560px;width:100%;margin:24px auto">
+  <h2>📝 Đăng ký bạn đọc (Sinh viên)</h2>
+  <div class="alert alert-info">Bản tĩnh: mặc định vai trò <b>student</b> (BR-01). Submit sẽ chuyển sang trang Đăng nhập demo.</div>
+  <form class="form" action="login.html" method="get">
+    <div class="form-row">
+      <div><label>MSSV *</label><input type="text" name="code" required placeholder="vd: sv2024001"></div>
+      <div><label>Họ tên *</label><input type="text" name="full_name" required placeholder="Nguyễn Văn A"></div>
+    </div>
+    <div class="form-row">
+      <div><label>Email *</label><input type="email" name="email" required placeholder="mssv@vaa.edu.vn"></div>
+      <div><label>Mật khẩu *</label><input type="password" name="password" required placeholder="Tối thiểu 6 ký tự"></div>
+    </div>
+    <div class="form-row">
+      <div><label>Khoa</label><input type="text" name="faculty" placeholder="vd: Khoa Khởi nghiệp – Kinh doanh"></div>
+      <div><label>Lớp</label><input type="text" name="class_name" placeholder="vd: QLB24A"></div>
+    </div>
+    <p><button class="btn btn-primary" type="submit" style="width:100%">Đăng ký</button></p>
+  </form>
+</div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="register.html">Đăng ký</a></div><div>Hỗ trợ: library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>

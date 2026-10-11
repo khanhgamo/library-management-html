@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bạn đọc - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Quản trị viên</small></span></a>
+<div class="userbox"><span>👋 Quản trị viên VAU</span><a href="admin.html">Quản trị</a><a href="index.html">Đăng xuất</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="admin.html">📊 Quản trị</a><a href="manage-books.html">📚 Sách</a><a href="manage-borrows.html">🔁 Mượn/Trả</a><a href="manage-fines.html">💰 Phạt/Giữ chỗ</a><a class="active" href="manage-users.html">👥 Bạn đọc</a></div></div>
+<div class="wrap">
+<div class="panel"><h2>👥 Quản lý bạn đọc</h2>
+<div class="alert alert-info">Chỉ <b>Quản trị viên</b> được quản lý người dùng (BR-02). Bản tĩnh minh họa giao diện.</div>
+<form class="form" action="manage-users.html" method="get">
+<div class="form-row form-row-auto">
+<input type="text" name="code" required placeholder="Mã (mssv)">
+<input type="text" name="full_name" required placeholder="Họ tên">
+<input type="email" name="email" required placeholder="Email">
+<select name="role"><option value="student">student</option><option value="lecturer">lecturer</option><option value="librarian">librarian</option><option value="admin">admin</option></select>
+</div>
+<div class="form-row form-row-4">
+<input type="text" name="faculty" placeholder="Khoa"><input type="text" name="class_name" placeholder="Lớp">
+<input type="text" name="password" placeholder="Mật khẩu (def: 123456)"><button class="btn btn-primary" type="submit">Thêm</button>
+</div></form>
+<div class="table-responsive" style="margin-top:10px"><table class="tbl">
+<tr><th>Mã</th><th>Họ tên / Email</th><th>Vai trò</th><th>Đang mượn</th><th>Nợ phạt</th><th>Trạng thái</th><th></th></tr>
+<tr><td><b>admin</b></td><td>Quản trị viên VAU<br><span class="muted">admin@vau.edu.vn · Phòng Thư viện</span></td><td><select><option selected>admin</option><option>librarian</option><option>lecturer</option><option>student</option></select></td><td>0</td><td>0đ</td><td><span class="badge badge-success">active</span></td><td><a class="btn btn-sm btn-light" href="manage-users.html">Khóa/Mở</a></td></tr>
+<tr><td><b>thuthu</b></td><td>Nguyễn Thị Thủ Thư<br><span class="muted">librarian@vau.edu.vn · Phòng Thư viện</span></td><td><select><option>admin</option><option selected>librarian</option><option>lecturer</option><option>student</option></select></td><td>0</td><td>0đ</td><td><span class="badge badge-success">active</span></td><td><a class="btn btn-sm btn-light" href="manage-users.html">Khóa/Mở</a></td></tr>
+<tr><td><b>gv001</b></td><td>TS. Trần Văn Giảng<br><span class="muted">gv001@vau.edu.vn · Khoa Kỹ thuật HK</span></td><td><select><option>admin</option><option>librarian</option><option selected>lecturer</option><option>student</option></select></td><td>1</td><td>0đ</td><td><span class="badge badge-success">active</span></td><td><a class="btn btn-sm btn-light" href="manage-users.html">Khóa/Mở</a></td></tr>
+<tr><td><b>sv001</b></td><td>Nguyễn Văn An<br><span class="muted">sv001@vaa.edu.vn · QLB21A</span></td><td><select><option>admin</option><option>librarian</option><option>lecturer</option><option selected>student</option></select></td><td>2</td><td>15,000đ</td><td><span class="badge badge-success">active</span></td><td><a class="btn btn-sm btn-light" href="manage-users.html">Khóa/Mở</a></td></tr>
+<tr><td><b>sv002</b></td><td>Lê Thị Bình<br><span class="muted">sv002@vaa.edu.vn · KLQ22B</span></td><td><select><option>admin</option><option>librarian</option><option>lecturer</option><option selected>student</option></select></td><td>1</td><td>0đ</td><td><span class="badge badge-success">active</span></td><td><a class="btn btn-sm btn-light" href="manage-users.html">Khóa/Mở</a></td></tr>
+<tr><td><b>sv003</b></td><td>Phạm Quốc Cường<br><span class="muted">sv003@vaa.edu.vn · KTHK21C</span></td><td><select><option>admin</option><option>librarian</option><option>lecturer</option><option selected>student</option></select></td><td>0</td><td>0đ</td><td><span class="badge badge-success">active</span></td><td><a class="btn btn-sm btn-light" href="manage-users.html">Khóa/Mở</a></td></tr>
+</table></div></div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="manage-users.html">Bạn đọc</a></div><div>library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>

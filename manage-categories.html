@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh mục - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Thủ thư</small></span></a>
+<div class="userbox"><span>👋 Thủ thư</span><a href="admin.html">Quản trị</a><a href="index.html">Đăng xuất</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="admin.html">📊 Quản trị</a><a class="active" href="manage-books.html">📚 Sách</a><a href="manage-borrows.html">🔁 Mượn/Trả</a><a href="manage-fines.html">💰 Phạt/Giữ chỗ</a></div></div>
+<div class="wrap">
+<div class="panel panel-center" style="max-width:760px;width:100%">
+  <h2>🗂 Danh mục sách</h2>
+  <form class="form" action="manage-categories.html" method="get">
+    <div class="form-row form-row-auto">
+      <input type="text" name="code" required placeholder="Mã (VD: KN-KD)">
+      <input type="text" name="name" required placeholder="Tên danh mục">
+      <input type="text" name="description" placeholder="Mô tả">
+      <button class="btn btn-primary" type="submit">Thêm</button>
+    </div></form>
+  <div class="table-responsive"><table class="tbl" style="margin-top:12px"><tr><th>Mã</th><th>Tên</th><th>Số sách</th><th></th></tr>
+  <tr><td>KN-KD</td><td><b>Khởi nghiệp – Kinh doanh</b><br><span class="muted">Sách kinh doanh, khởi nghiệp, đầu tư</span></td><td>5</td><td><a class="btn btn-sm btn-danger" href="manage-categories.html" data-confirm="Xóa danh mục?">Xóa</a></td></tr>
+  <tr><td>PTBT</td><td><b>Phát triển bản thân</b><br><span class="muted">Kỹ năng sống, thói quen hiệu quả, đắc nhân tâm</span></td><td>5</td><td><a class="btn btn-sm btn-danger" href="manage-categories.html" data-confirm="Xóa danh mục?">Xóa</a></td></tr>
+  <tr><td>VHCD</td><td><b>Văn học cổ điển</b><br><span class="muted">Truyện thơ Nôm, ngâm khúc Việt Nam</span></td><td>5</td><td><a class="btn btn-sm btn-danger" href="manage-categories.html" data-confirm="Xóa danh mục?">Xóa</a></td></tr>
+  </table></div>
+  <p><a class="btn btn-light" href="manage-books.html">← Về quản lý sách</a></p>
+  <p class="muted">BR-10: danh mục còn sách thì cấm xóa.</p>
+</div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="manage-books.html">Sách</a></div><div>library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>

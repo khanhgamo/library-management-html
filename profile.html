@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ sơ - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Học viện Hàng không Việt Nam</small></span></a>
+<div class="userbox"><span>👋 Nguyễn Văn An (Sinh viên)</span><a href="dashboard.html">Tủ sách của tôi</a><a href="index.html">Đăng xuất</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="index.html">Trang chủ</a><a href="catalog.html">Tra cứu sách</a><a href="ebooks.html">Thư viện số (Ebook)</a><a href="announcements.html">Thông báo</a><a class="active" href="dashboard.html">Mượn của tôi</a></div></div>
+<div class="wrap">
+<div class="panel" style="max-width:640px;width:100%">
+  <h2>👤 Hồ sơ bạn đọc</h2>
+  <p class="muted">Mã: <b>sv001</b> · Email: <b>sv001@vaa.edu.vn</b> · Vai trò: <b>Sinh viên</b></p>
+  <form class="form" action="profile.html" method="get">
+    <label>Họ tên</label><input type="text" name="full_name" value="Nguyễn Văn An">
+    <div class="form-row"><div><label>Điện thoại</label><input type="text" name="phone" value="0901000002"></div>
+    <div><label>Lớp</label><input type="text" name="class_name" value="QLB21A"></div></div>
+    <label>Khoa</label><input type="text" name="faculty" value="Khoa Khởi nghiệp – Kinh doanh">
+    <p><button class="btn btn-primary" type="submit">Lưu hồ sơ</button></p>
+  </form>
+  <hr><h3>Đổi mật khẩu</h3>
+  <form class="form" action="profile.html" method="get">
+    <label>Mật khẩu hiện tại</label><input type="password" name="old" required>
+    <label>Mật khẩu mới</label><input type="password" name="new" required>
+    <p><button class="btn btn-light" type="submit">Đổi mật khẩu</button></p>
+  </form>
+</div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="dashboard.html">Tủ sách</a></div><div>library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tin tức - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Thủ thư</small></span></a>
+<div class="userbox"><span>👋 Thủ thư</span><a href="admin.html">Quản trị</a><a href="index.html">Đăng xuất</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="admin.html">📊 Quản trị</a><a href="manage-books.html">📚 Sách</a><a href="manage-borrows.html">🔁 Mượn/Trả</a><a class="active" href="manage-announcements.html">📢 Tin tức</a><a href="manage-users.html">👥 Bạn đọc</a></div></div>
+<div class="wrap">
+<div class="panel" style="max-width:760px;width:100%"><h2>📢 Quản lý thông báo</h2>
+<form class="form" action="manage-announcements.html" method="get">
+<label>Tiêu đề</label><input type="text" name="title" required placeholder="VD: Lịch nghỉ Tết & gia hạn">
+<label>Nội dung</label><textarea name="content" required placeholder="Nội dung thông báo..."></textarea>
+<p><label><input type="checkbox" name="is_pinned" value="1"> Ghim lên đầu</label>
+<button class="btn btn-primary" type="submit">Đăng</button></p></form>
+<hr>
+<p><span class="badge badge-warning">GHIM</span> <b>Chào mừng đến Thư viện số VAU</b> <span class="muted">(01/09/2024)</span>
+<a class="btn btn-sm btn-danger" href="manage-announcements.html" data-confirm="Xóa thông báo?">Xóa</a><br>
+<span class="muted">Hệ thống thư viện số chính thức của Học viện Hàng không Việt Nam đã vận hành...</span></p>
+<p><b>Bổ sung 15 sách mới đã có file đọc offline</b> <span class="muted">(15/09/2024)</span>
+<a class="btn btn-sm btn-danger" href="manage-announcements.html" data-confirm="Xóa thông báo?">Xóa</a><br>
+<span class="muted">Thư viện vừa số hóa giáo trình ICAO Annex, IATA AHM...</span></p>
+<p><b>Lịch nghỉ lễ &amp; gia hạn tự động</b> <span class="muted">(20/09/2024)</span>
+<a class="btn btn-sm btn-danger" href="manage-announcements.html" data-confirm="Xóa thông báo?">Xóa</a><br>
+<span class="muted">Sách đến hạn trong kỳ nghỉ lễ được tự động gia hạn 7 ngày...</span></p>
+</div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="manage-announcements.html">Tin tức</a></div><div>library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>

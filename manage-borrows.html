@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mượn/Trả - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Thủ thư</small></span></a>
+<div class="userbox"><span>👋 Nguyễn Thị Thủ Thư</span><a href="admin.html">Quản trị</a><a href="index.html">Đăng xuất</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="admin.html">📊 Quản trị</a><a href="manage-books.html">📚 Sách</a><a class="active" href="manage-borrows.html">🔁 Mượn/Trả</a><a href="manage-fines.html">💰 Phạt/Giữ chỗ</a><a href="manage-users.html">👥 Bạn đọc</a></div></div>
+<div class="wrap">
+<div class="panel">
+  <h2>🔁 Xử lý mượn / trả</h2>
+  <p><a class="btn btn-sm btn-primary" href="manage-borrows.html">pending</a> <a class="btn btn-sm btn-light" href="manage-borrows.html">borrowing</a> <a class="btn btn-sm btn-light" href="manage-borrows.html">overdue</a> <a class="btn btn-sm btn-light" href="manage-borrows.html">returned</a> <a class="btn btn-sm btn-light" href="manage-borrows.html">all</a></p>
+  <div class="table-responsive"><table class="tbl">
+  <tr><th>ID</th><th>Bạn đọc</th><th>Bìa</th><th>Sách</th><th>Mượn</th><th>Hạn</th><th>Trạng thái</th><th>Xử lý</th></tr>
+  <tr><td>5</td><td><b>Nguyễn Văn An</b><br><span class="muted">sv001</span></td><td><img class="thumb" src="assets/covers/7-thoi-quen.png?v=2" alt="Bìa" loading="lazy"></td><td>7 thói quen hiệu quả</td><td>05/10/2026</td><td>19/10/2026</td><td><span class="badge badge-warning">Chờ duyệt</span></td><td style="white-space:nowrap"><a class="btn btn-sm btn-primary" href="manage-borrows.html">Duyệt</a> <a class="btn btn-sm btn-light" href="manage-borrows.html">Từ chối</a></td></tr>
+  <tr><td>4</td><td><b>Lê Thị Bình</b><br><span class="muted">sv002</span></td><td><img class="thumb" src="assets/covers/quang-ganh-lo.png?v=2" alt="Bìa" loading="lazy"></td><td>Quẳng gánh lo đi và vui sống</td><td>01/10/2026</td><td>15/10/2026</td><td><span class="badge badge-warning">Chờ duyệt</span></td><td style="white-space:nowrap"><a class="btn btn-sm btn-primary" href="manage-borrows.html">Duyệt</a> <a class="btn btn-sm btn-light" href="manage-borrows.html">Từ chối</a></td></tr>
+  <tr><td>3</td><td><b>Nguyễn Văn An</b><br><span class="muted">sv001</span></td><td><img class="thumb" src="assets/covers/truyen-kieu.png?v=2" alt="Bìa" loading="lazy"></td><td>Truyện Kiều</td><td>01/10/2026</td><td>15/10/2026</td><td><span class="badge badge-info">Đang mượn</span></td><td style="white-space:nowrap"><a class="btn btn-sm btn-primary" href="manage-borrows.html">Nhận trả</a> <a class="btn btn-sm btn-danger" href="manage-borrows.html" data-confirm="Ghi nhận MẤT sách và phạt đền 200%?">Báo mất</a></td></tr>
+  <tr><td>2</td><td><b>Nguyễn Văn An</b><br><span class="muted">sv001</span></td><td><img class="thumb" src="assets/covers/dac-nhan-tam.png?v=2" alt="Bìa" loading="lazy"></td><td>Đắc nhân tâm</td><td>20/09/2026</td><td>04/10/2026 <span class="badge badge-danger">+7d</span></td><td><span class="badge badge-danger">Quá hạn</span></td><td style="white-space:nowrap"><a class="btn btn-sm btn-primary" href="manage-borrows.html">Nhận trả</a> <a class="btn btn-sm btn-danger" href="manage-borrows.html" data-confirm="Ghi nhận MẤT sách?">Báo mất</a></td></tr>
+  </table></div>
+  <p class="muted">BR-08: Nhận trả trễ tự tính phạt 5,000đ/ngày · Báo mất đền 200% giá bìa · Duyệt trừ kho (−1), Trả cộng kho (+1).</p>
+</div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="manage-borrows.html">Mượn/Trả</a></div><div>library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>

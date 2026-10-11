@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thêm/Sửa sách - VAU</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✈</span><span><b>Thư viện số VAU</b><small>Thủ thư</small></span></a>
+<div class="userbox"><span>👋 Thủ thư</span><a href="admin.html">Quản trị</a><a href="index.html">Đăng xuất</a></div>
+</div></div>
+<div class="nav"><div class="wrap"><a href="admin.html">📊 Quản trị</a><a class="active" href="manage-books.html">📚 Sách</a><a href="manage-borrows.html">🔁 Mượn/Trả</a><a href="manage-fines.html">💰 Phạt/Giữ chỗ</a></div></div>
+<div class="wrap">
+<div class="panel" style="max-width:720px;width:100%">
+  <h2>➕ Thêm sách mới</h2>
+  <div class="alert alert-info">Bản tĩnh: upload chỉ minh họa. Bản PHP lưu vào <b>uploads/ebooks/</b> (PDF/EPUB ≤ 50MB).</div>
+  <form class="form" action="manage-books.html" method="get">
+    <label>Tên sách *</label><input type="text" name="title" required placeholder="VD: Giáo trình Khí tượng Hàng không" value="">
+    <div class="form-row">
+      <div><label>Tác giả</label><input type="text" name="authors" placeholder="VD: TS. Nguyễn Văn A"></div>
+      <div><label>ISBN</label><input type="text" name="isbn" placeholder="978-..."></div>
+    </div>
+    <div class="form-row">
+      <div><label>NXB</label><input type="text" name="publisher" placeholder="NXB Hàng không VN"></div>
+      <div><label>Năm XB</label><input type="number" name="publish_year" value="2024"></div>
+    </div>
+    <div class="form-row">
+      <div><label>Danh mục</label><select name="category_id"><option>— Giáo trình Hàng không</option><option>Kỹ thuật Tàu bay</option><option>Quản lý bay &amp; Khai thác</option><option>Không lưu (ATC)</option><option>An toàn &amp; An ninh HK</option><option>Luật Hàng không</option><option>Tiếng Anh Hàng không</option><option>Luận văn &amp; NCKH</option></select></div>
+      <div><label>Loại tài liệu</label><select name="doc_type"><option value="both">Cả vật lý + số</option><option value="physical">Chỉ vật lý</option><option value="ebook">Chỉ ebook</option></select></div>
+    </div>
+    <div class="form-row">
+      <div><label>Số lượng tổng</label><input type="number" name="quantity_total" min="0" value="5"></div>
+      <div><label>Kệ sách</label><input type="text" name="shelf" placeholder="vd: A1-01"></div>
+    </div>
+    <div class="form-row">
+      <div><label>Giá bìa (đ, để tính đền BR-08)</label><input type="number" name="price" min="0" value="185000"></div>
+      <div><label>Số trang</label><input type="number" name="pages" placeholder="320"></div>
+    </div>
+    <label>Ngôn ngữ</label><select name="language"><option value="vi">Tiếng Việt (vi)</option><option value="en">English (en)</option></select>
+    <label>File ebook (PDF/EPUB/DOCX ≤ 50MB)</label><input type="file" name="ebook" accept=".pdf,.epub,.docx">
+    <label>Ảnh bìa (JPG/PNG ≤ 5MB)</label><input type="file" name="cover" accept=".jpg,.jpeg,.png,.webp">
+    <p><label><input type="checkbox" name="preview_only" value="1"> 👁 Chỉ cho đọc thử 2 trang đầu (cấm tải full)</label></p>
+    <label>Mô tả</label><textarea name="description" placeholder="Tóm tắt nội dung..."></textarea>
+    <p><button class="btn btn-primary" type="submit">Lưu</button> <a class="btn btn-light" href="manage-books.html">Hủy</a></p>
+  </form>
+</div>
+</div>
+<footer class="footer"><div class="wrap"><div><b>✈ Thư viện số VAA</b></div><div><a style="color:#cdd8f3" href="manage-books.html">Sách</a></div><div>library@vaa.edu.vn</div></div></footer>
+<script src="assets/app.js"></script>
+</body></html>
